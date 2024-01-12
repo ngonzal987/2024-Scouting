@@ -1,0 +1,252 @@
+[
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "multiply",
+        "operands": [
+          "didLeave",
+          2
+        ],
+        "as": "leave"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "autoSpeaker",
+          5
+        ],
+        "as": "aSpeaker"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "autoAmp",
+          2
+        ],
+        "as": "aAmp"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleSpeaker",
+          2
+        ],
+        "as": "tSpeaker"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleSpeakerAmped",
+          5
+        ],
+        "as": "tSpeakerAmped"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleAmp",
+          1
+        ],
+        "as": "tAmp"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didPark",
+          2
+        ],
+        "as": "park"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didOnstage",
+          3
+        ],
+        "as": "onstage"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didHarmony",
+          2
+        ],
+        "as": "harmony"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didTrap",
+          5
+        ],
+        "as": "trap"
+      },
+      {
+        "operator": "sum",
+        "operands": [
+          "$leave",
+          "$aSpeaker",
+          "$aAmp",
+          "$tSpeaker",
+          "$tSpeakerAmped",
+          "$tAmp",
+          "$park",
+          "$onstage",
+          "$harmony",
+          "$trap"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total contributed points",
+    "id": "contributedPoints"
+  },
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "sum",
+        "operands": [
+          "autoSpeaker",
+          "autoAmp",
+          "teleSpeaker",
+          "teleSpeakerAmped",
+          "teleAmp"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Notes",
+    "id": "totalNotes"
+  },
+  {
+    "type": "h2",
+    "label": "Autonomous",
+    "id": "lblAuto"
+  },
+  {
+    "type": "checkbox",
+    "label": "Robot leave the starting zone?",
+    "id": "didLeave"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Speaker Notes Scored",
+    "id": "autoSpeaker"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Amp Notes Scored",
+    "id": "autoAmp"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "h2",
+    "label": "Teleop",
+    "id": "lblTele"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Speaker Notes Scored",
+    "id": "teleSpeaker"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Amplified Speaker Notes Scored",
+    "id": "teleSpeakerAmped"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Amp Notes Scored",
+    "id": "teleAmp"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Source Notes Acquired",
+    "id": "sourceNotes"
+  },
+  {
+    "type": "counterallownegative",
+    "label": "Ground Notes Acquired",
+    "id": "groundNotes"
+  },
+  {
+    "type": "checkbox",
+    "label": "Robot played defense",
+    "id": "didDefense"
+  },
+  {
+    "type": "counter",
+    "label": "Total fouls",
+    "id": "totalFouls"
+  },
+  {
+    "type": "counter",
+    "label": "Total technical fouls",
+    "id": "totalTechnicalFouls"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "h2",
+    "label": "Endgame",
+    "id": "lblEndgame"
+  },
+  {
+    "type": "checkbox",
+    "label": "Robot parked in the Stage",
+    "id": "didPark"
+  },
+  {
+    "type": "checkbox",
+    "label": "Robot got Onstage",
+    "id": "didOnstage"
+  },
+  {
+    "type": "checkbox",
+    "label": "Robot harmonized with another robot",
+    "id": "didHarmony"
+  },
+  {
+    "type": "counter",
+    "label": "Notes scored in the Trap",
+    "id": "didTrap"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "h2",
+    "label": "General",
+    "id": "generalLabel"
+  },
+  {
+    "type": "counter",
+    "label": "How many times did the robot die during the match?",
+    "id": "diedDuringMatch"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did the referee disable the robot?",
+    "id": "robotDisabled"
+  },
+  {
+    "type": "counter",
+    "label": "Total yellow cards",
+    "id": "totalYellowCards"
+  },
+  {
+    "type": "checkbox",
+    "label": "Did they get a red card?",
+    "id": "didRedCard"
+  },
+  {
+    "type": "textblock",
+    "label": "Other comments and notes:",
+    "id": "otherNotes"
+  }
+]
