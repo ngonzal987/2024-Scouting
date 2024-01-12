@@ -121,6 +121,178 @@
     "id": "totalNotes"
   },
   {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "sum",
+        "operands": [
+          "autoAmp",
+          "teleAmp"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Amp Notes",
+    "id": "totalAmpNotes"
+  },
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "sum",
+        "operands": [
+          "autoSpeaker",
+          "teleSpeaker",
+          "teleSpeakerAmped"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Speaker Notes",
+    "id": "totalSpeakerNotes"
+  },
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "multiply",
+        "operands": [
+          "didLeave",
+          2
+        ],
+        "as": "leave"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "autoSpeaker",
+          5
+        ],
+        "as": "aSpeaker"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "autoAmp",
+          2
+        ],
+        "as": "aAmp"
+      },
+      {
+        "operator": "sum",
+        "operands": [
+          "$leave",
+          "$aSpeaker",
+          "$aAmp"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Auto points",
+    "id": "totalAutoPoints"
+  },
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleSpeaker",
+          2
+        ],
+        "as": "tSpeaker"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleSpeakerAmped",
+          5
+        ],
+        "as": "tSpeakerAmped"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "teleAmp",
+          1
+        ],
+        "as": "tAmp"
+      },
+      {
+        "operator": "sum",
+        "operands": [
+          "$tSpeaker",
+          "$tSpeakerAmped",
+          "$tAmp"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Teleop points",
+    "id": "totalTelePoints"
+  },
+  {
+    "type": "derived",
+    "operations": [
+      {
+        "operator": "multiply",
+        "operands": [
+          "didPark",
+          2
+        ],
+        "as": "park"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didOnstage",
+          3
+        ],
+        "as": "onstage"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didHarmony",
+          2
+        ],
+        "as": "harmony"
+      },
+      {
+        "operator": "multiply",
+        "operands": [
+          "didTrap",
+          5
+        ],
+        "as": "trap"
+      },
+      {
+        "operator": "sum",
+        "operands": [
+          "$park",
+          "$onstage",
+          "$harmony",
+          "$trap"
+        ]
+      }
+    ],
+    "display_as": "number",
+    "label": "Total Endgame points",
+    "id": "totalEndgamePoints"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  {
     "type": "h2",
     "label": "Autonomous",
     "id": "lblAuto"
