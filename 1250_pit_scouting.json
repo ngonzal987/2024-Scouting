@@ -1,0 +1,70 @@
+[
+  {
+    "type": "h2",
+    "label": "Drive Base",
+    "id": "driveBase"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "textblock",
+    "label": "Drive base type",
+    "id": "driveBaseType"
+  },
+  {
+    "type": "slider",
+    "label": "Drive Base Length (in) (With bumpers)",
+    "id": "driveBaseLength",
+    "options": {
+      "min": 20,
+      "max": 40,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Drive Base Width (in) (With bumpers)",
+    "id": "driveBaseWidth",
+    "options": {
+      "min": 20,
+      "max": 40,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Robot Height",
+    "id": "robotHeight",
+    "options": {
+      "min": 20,
+      "max": 48,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Robot Weight",
+    "id": "robotWeight",
+    "options": {
+      "min": 70,
+      "max": 125,
+      "step": 1
+    }
+  },
+  {
+    "type": "slider",
+    "label": "Quality of bumpers?",
+    "id": "bumperQuality",
+    "options": {
+      "min": 1,
+      "max": 5,
+      "step": 1
+    }
+  },
+  {
+    "type": "textblock",
+    "label": "How friendly is the team?",
+    "id": "howFriendly"
+  }
+]
